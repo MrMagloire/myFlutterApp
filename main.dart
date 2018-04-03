@@ -49,6 +49,18 @@ class TestAppHomePageState extends State<TestAppHomePage>
   }
 }
 
+class VerticalSeparator extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+        margin: new EdgeInsets.symmetric(vertical: 4.0),
+        height: 80.0,
+        width: 1.0,
+        color: Colors.deepOrange
+    );
+  }
+}
+
 class MyTimeLine extends StatefulWidget{
   @override
   _TimeLineState createState() => _TimeLineState();
