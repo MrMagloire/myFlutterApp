@@ -1,4 +1,18 @@
-void main() => runApp(new MyApp()); //Startup here
+void main() => runApp(new TestApp()); //Startup here
+
+class TestApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: 'My App',
+      color: Colors.grey,
+      home: new MyApp(),
+      theme: new ThemeData(
+        primarySwatch: Colors.lightBlue,
+      ),
+    );
+  }
+}
 
     class MyApp extends StatelessWidget{
       @override
